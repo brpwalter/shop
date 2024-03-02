@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/j2ee/dtds/web-app_2_3.dtd">
+
+<web-app>
+
+    <!-- Define servlets that are included in the example application -->
+    <servlet>
+        <servlet-name>
+	    shop
+        </servlet-name>
+        <servlet-class>
+	    de.extshop.Shop
+        </servlet-class>
+
+        <init-param>
+            <param-name>DatabaseDriver</param-name>
+            <!-- <param-value>org.gjt.mm.mysql.Driver</param-value> -->
+            <param-value>com.mysql.cj.jdbc.Driver</param-value>
+        </init-param>
+
+        <init-param>
+            <param-name>DatabaseURL</param-name>
+           <!--  <param-value>jdbc:mysql://localhost:3306/shop</param-value> -->
+           <param-value>jdbc:mysql://localhost:3306/shop?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC</param-value>
+        </init-param>
+
+        <init-param>
+            <param-name>DatabaseUser</param-name>
+            <param-value>servlets</param-value>
+        </init-param>
+
+        <init-param>
+            <param-name>DatabasePassword</param-name>
+            <param-value>geheim</param-value>
+        </init-param>
+
+        <init-param>
+            <param-name>DatabaseLogFile</param-name>
+            <param-value>D:\\eclipse\\eclipse-2020-workspace\\Fussball2\\shop\\WebContent\\jdbc.log</param-value>
+        </init-param>
+
+        <init-param>
+            <param-name>MinimumConnections</param-name>
+            <param-value>1</param-value>
+        </init-param>
+
+        <init-param>
+            <param-name>MaximumConnections</param-name>
+            <param-value>5</param-value>
+        </init-param>
+
+        <init-param>
+            <param-name>MaximumConnectionTime</param-name>
+            <param-value>1</param-value>
+        </init-param>
+    </servlet>
+
+    <servlet>
+        <servlet-name>
+            XSLTDemo 
+        </servlet-name>
+        <servlet-class>
+            de.xslt.XSLTDemo
+        </servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>
+            XSLTDemo 
+        </servlet-name>
+        <url-pattern>
+            /XSLTDemo/*
+       </url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>
+	    shop
+        </servlet-name>
+        <url-pattern>
+            /shop/*
+       </url-pattern>
+    </servlet-mapping>
+
+</web-app>

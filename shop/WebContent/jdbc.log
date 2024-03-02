@@ -1,0 +1,12 @@
+Starting DbConnectionBroker Version 1.0.11:
+dbDriver = com.mysql.cj.jdbc.Driver
+dbServer = jdbc:mysql://localhost:3306/shop?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+dbLogin = servlets
+log file = D:\\eclipse\\eclipse-2020-workspace\\Fussball2\\shop\\WebContent\\jdbc.log
+minconnections = 1
+maxconnections = 5
+Total refresh interval = 1.0 days
+-----------------------------------------
+Sun Dec 31 11:28:24 CET 2023  Opening connection 0 com.mysql.cj.jdbc.ConnectionImpl@25710aa3:
+Mon Jan 01 00:18:39 CET 2024 ***** Recycling connection 0:
+Mon Jan 01 00:18:39 CET 2024  Opening connection 0 com.mysql.cj.jdbc.ConnectionImpl@f194fc4:

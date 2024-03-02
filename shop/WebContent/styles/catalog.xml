@@ -1,0 +1,11 @@
+<?xml version="1.0"  encoding="ISO-8859-1" ?>
+<catalog>
+	<article>
+		<name>Java Servlets und ServerPages</name>
+		<price>40,88</price>
+	</article>
+	<article>
+		<name>PHP 4 + MySQL</name>
+		<price>35,77</price>
+	</article>
+</catalog>
